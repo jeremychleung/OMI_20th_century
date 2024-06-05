@@ -12,7 +12,7 @@ This repository contains the data files of Outgoing Longwave Radiation based MJO
  <br />  
  -->
 
-**About the 20th century OMI **
+**About the 20th century OMI**
 -----
 - OMI is a MJO index . . .
 - 
