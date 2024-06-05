@@ -1,7 +1,4 @@
-# OMI_20th_century
-Outgoing Longwave Radiation based MJO index (OMI) for the 20th century
-
-<!-- # Indo-Pacific Deep Convection Favoring Pool -->
+<!-- # OMI_20th_century -->
 Outgoing Longwave Radiation based MJO index (OMI) for the 20th century 
 =====
 <!-- [![DOI](https://zenodo.org/badge/520879810.svg)](https://zenodo.org/badge/latestdoi/520879810) <br /> -->
