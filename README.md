@@ -17,20 +17,20 @@ This repository contains the data files of Outgoing Longwave Radiation based MJO
 - The OMI is a RMM-like index derived solely from outgoing longwave radiation (OLR) reanalyzed in the 20th century. It provides a more accurate representation of the convective characteristics of the Madden-Julian Oscillation (MJO) and can be applied to the pre-satellite era, where satellite-based OLR data was unavailable.
 - The RMM index (Wheeler and Hendon, 2004) focuses on the circulation of MJO rather than its convective characteristics (Leung et al., 2022). Meanwhile, the limited duration of OLR observations limits the data length of the RMM index. These limitations present a challenge for studying the long-term changes in MJO convective activity over the past century. Therefore, the OMI, constructed using OLR data from 20th century reanalysis, is utilized to address these issues.
 - The construction method of the OMI is introduced by Kiladis et al. (2014), which includes the following steps: (1) applying a 30-96-day eastward filter on daily OLR between 20°S and 20°N; (2) performing Empirical Orthogonal Function (EOF) onto the filtered OLR and obtain the first two principal components (PCs); (3) to project the PCs onto the OLR, which has been filtered for 20-96-day, to obtain OMI1 (PC1) and OMI2 (PC2).
-- Please refer to [Kiladis et al. (2014)]([https://doi.org](https://doi.org/10.1175/MWR-D-13-00301.1)/ ) for more detail about the calculation procedure and the science behind it.
+- Please refer to [Kiladis et al. (2014)]([https://doi.org/10.1175/MWR-D-13-00301.1](https://doi.org/10.1175/MWR-D-13-00301.1)/ ) for more detail about the calculation procedure and the science behind it.
  <br /> 
  
 **Data files**
 -----
 - **OMI-ERA20C**
   - Description: OMI derived based on the ERA-20C reanalysis.
-  - Location: [data/OMI-ERA20C.xlsx](https://github.com/jeremychleung/Indo-Pacific-Deep-Convection-Favoring-Pool/blob/main/data/02-sst_threshold_ersst_gpcp.csv)
+  - Location: [data/OMI-ERA20C.xlsx](https://github.com/jeremychleung/OMI_20th_century/tree/main/data/OMI-ERA20C.xlsx)
   - Temporal coverage: 1900–2010
 
   
 - **OMI-NOAA20CR**
   - Description: OMI derived based on the NOAA-20CRv2c reanalysis.
-  - Location: [data/OMI-NOAA20CR.xlsx](https://github.com/jeremychleung/Indo-Pacific-Deep-Convection-Favoring-Pool/blob/main/data/02-sst_threshold_hadisst_gpcp.csv)
+  - Location: [data/OMI-NOAA20CR.xlsx](https://github.com/jeremychleung/OMI_20th_century/tree/main/data/OMI-NOAA20CR.xlsx)
   - Temporal coverage: 1900–2015
   
 <br /> 
@@ -38,9 +38,9 @@ This repository contains the data files of Outgoing Longwave Radiation based MJO
 
 **Citation**
 -----
-If you use the OMI-ERA20C or OMI-NOAA20CR in a publication or for any other purposes, please cite 
+If you use the OMI-ERA20C or OMI-NOAA20CR in a publication or for any other purposes, please cite (to be uploaded)
 <!--
-(to be uploaded)
+
 -->
 
 <br /> 
