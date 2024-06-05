@@ -14,82 +14,45 @@ This repository contains the data files of Outgoing Longwave Radiation based MJO
 
 **About the 20th century OMI**
 -----
-- OMI is a MJO index . . .
-- 
-- Please refer to [Leung et al. (2022)](https://doi.org/ ) for more detail about the calculation procedure and the science behind it.
+- The OMI is a RMM-like index derived solely from outgoing longwave radiation (OLR) reanalyzed in the 20th century. It provides a more accurate representation of the convective characteristics of the Madden-Julian Oscillation (MJO) and can be applied to the pre-satellite era, where satellite-based OLR data was unavailable.
+- The RMM index (Wheeler and Hendon, 2004) focuses on the circulation of MJO rather than its convective characteristics (Leung et al., 2022). Meanwhile, the limited duration of OLR observations limits the data length of the RMM index. These limitations present a challenge for studying the long-term changes in MJO convective activity over the past century. Therefore, the OMI, constructed using OLR data from 20th century reanalysis, is utilized to address these issues.
+- The construction method of the OMI is introduced by Kiladis et al. (2014), which includes the following steps: (1) applying a 30-96-day eastward filter on daily OLR between 20°S and 20°N; (2) performing Empirical Orthogonal Function (EOF) onto the filtered OLR and obtain the first two principal components (PCs); (3) to project the PCs onto the OLR, which has been filtered for 20-96-day, to obtain OMI1 (PC1) and OMI2 (PC2).
+- Please refer to [Kiladis et al. (2014)]([https://doi.org](https://doi.org/10.1175/MWR-D-13-00301.1)/ ) for more detail about the calculation procedure and the science behind it.
  <br /> 
  
 **Data files**
 -----
-- **σ<sub>SST_conv</sub> derived based on ERSSTv5 and GPCP**
-  - Description: Time-varied SST threshold (σ<sub>SST_conv</sub>, unit: °C) for deep convection of intensity, derived based on SST (from ERSSTv5) and precipitation (GPCP).
-  - Location: [data/02-sst_threshold_ersst_gpcp.csv](https://github.com/jeremychleung/Indo-Pacific-Deep-Convection-Favoring-Pool/blob/main/data/02-sst_threshold_ersst_gpcp.csv)
-  - Temporal coverage: 1979–2020
-  - Rows: Year
-  - Columns: Convection intensity (defined based on average monthly precipitation)
-  
-- **σ<sub>SST_conv</sub> derived based on HadISST and GPCP**
-  - Description: Time-varied SST threshold for deep convection (σ<sub>SST_conv</sub>, unit: °C) derived based on SST (from HadISST) and precipitation (GPCP).
-  - Location: [data/02-sst_threshold_hadisst_gpcp.csv](https://github.com/jeremychleung/Indo-Pacific-Deep-Convection-Favoring-Pool/blob/main/data/02-sst_threshold_hadisst_gpcp.csv)
-  - Temporal coverage: 1979–2020
-  - Rows: Year
-  - Columns: Convection intensity (defined based on average monthly precipitation)
-  
-- **σ<sub>SST_conv</sub> derived based on 20 CMIP6 models**
-  - Description: Time-varied SST threshold for deep convection (σ<sub>SST_conv</sub>, unit: °C) derived based on model-simulated SST and precipitation.
-  - Models: ACCESS-CM2 / CAMS-CSM1-0 / CAS-ESM2-0 / CESM2-WACCM / CMCC-CM2-SR5 / CMCC-ESM2 / EC-Earth3 / EC-Earth3-Veg / FGOALS-f3-L / FGOALS-g3 / GFDL-ESM4 / INM-CM4-8 / INM-CM5-0 / IPSL-CM6A-LR / KACE-1-0-G / MIROC6 / MPI-ESM1-2-HR / MPI-ESM1-2-LR / MRI-ESM2-0 / NESM3 / TaiESM1
-  - Experiments: Historical runs / SSP1-2.6 / SSP2-4.5 / SSP5-8.5
-  - Location: data/cmip_{modelname}/06-sst_threshold_{modelname}_{experiment}_r1i1p1f1.csv <br /> 
-  (e.g., [data/cmip_ACCESS-CM2/06-sst_threshold_ACCESS-CM2_historical_r1i1p1f1.csv](https://github.com/jeremychleung/Indo-Pacific-Deep-Convection-Favoring-Pool/blob/main/data/cmip_ACCESS-CM2/06-sst_threshold_ACCESS-CM2_historical_r1i1p1f1.csv))
-  - Temporal coverage: 1850-2014 for Historical runs / 2015-2100 for future projections
-  - Rows: Year
-  - Columns: Convection intensity (defined based on average monthly precipitation)
+- **OMI-ERA20C**
+  - Description: OMI derived based on the ERA-20C reanalysis.
+  - Location: [data/OMI-ERA20C.xlsx](https://github.com/jeremychleung/Indo-Pacific-Deep-Convection-Favoring-Pool/blob/main/data/02-sst_threshold_ersst_gpcp.csv)
+  - Temporal coverage: 1900–2010
 
-- **DCFP derived based on ERSSTv5 and GPCP**
-  - Description: Area (unit: 10<sup>7</sup> km<sup>2</sup>) of deep convection favoring pool (DCFP) defined by time-varied σ<sub>SST_conv</sub>), based on SST (from ERSST) and precipitation (GPCP).
-  - Location: [data/12-dcfp_ersst_gpcp.csv](https://github.com/jeremychleung/Indo-Pacific-Deep-Convection-Favoring-Pool/blob/main/data/12-dcfp_ersst_gpcp.csv)
-  - Temporal coverage: 1979-2020
-  - Rows: Year
-  - Columns: Convection intensity (defined based on average monthly precipitation)
   
-- **DCFP derived based on HadISST and GPCP**
-  - Description: Area (unit: 10<sup>7</sup> km<sup>2</sup>) of deep convection favoring pool (DCFP) defined by time-varied σ<sub>SST_conv</sub>), based on SST (from HadISST) and precipitation (GPCP).
-  - Location: [data/12-dcfp_hadisst_gpcp.csv](https://github.com/jeremychleung/Indo-Pacific-Deep-Convection-Favoring-Pool/blob/main/data/12-dcfp_hadisst_gpcp.csv)
-  - Temporal coverage: 1979-2020
-  - Rows: Year
-  - Columns: Convection intensity (defined based on average monthly precipitation)
-
-- **DCFP derived based on 20 CMIP6 models**
-  - Description: Area (unit: 10<sup>7</sup> km<sup>2</sup>) of deep convection favoring pool (DCFP) defined based on model-simulated time-varied σ<sub>SST_conv</sub>).
-  - Models: ACCESS-CM2 / CAMS-CSM1-0 / CAS-ESM2-0 / CESM2-WACCM / CMCC-CM2-SR5 / CMCC-ESM2 / EC-Earth3 / EC-Earth3-Veg / FGOALS-f3-L / FGOALS-g3 / GFDL-ESM4 / INM-CM4-8 / INM-CM5-0 / IPSL-CM6A-LR / KACE-1-0-G / MIROC6 / MPI-ESM1-2-HR / MPI-ESM1-2-LR / MRI-ESM2-0 / NESM3 / TaiESM1
-  - Experiments: Historical runs / SSP1-2.6 / SSP2-4.5 / SSP5-8.5
-  - Location: data/cmip_{modelname}/16-dcfp_{modelname}_{experiment}_r1i1p1f1.csv <br /> 
-  (e.g., [data/cmip_ACCESS-CM2/16-dcfp_ACCESS-CM2_historical_r1i1p1f1.csv](https://github.com/jeremychleung/Indo-Pacific-Deep-Convection-Favoring-Pool/blob/main/data/cmip_ACCESS-CM2/16-dcfp_ACCESS-CM2_historical_r1i1p1f1_.csv))
-  - Temporal coverage: 1850-2014 for Historical runs / 2015-2100 for future projections
-  - Rows: Year
-  - Columns: Convection intensity (defined based on average monthly precipitation)
-  
+- **OMI-NOAA20CR**
+  - Description: OMI derived based on the NOAA-20CRv2c reanalysis.
+  - Location: [data/OMI-NOAA20CR.xlsx](https://github.com/jeremychleung/Indo-Pacific-Deep-Convection-Favoring-Pool/blob/main/data/02-sst_threshold_hadisst_gpcp.csv)
+  - Temporal coverage: 1900–2015
   
 <br /> 
   
 
 **Citation**
 -----
-If you use the GMM index in a publication or for any other purposes, please cite 
+If you use the OMI-ERA20C or OMI-NOAA20CR in a publication or for any other purposes, please cite 
 <!--
-- Leung, J.CH., Qian, W., Zhang, P. et al. Geopotential-based Multivariate MJO Index: extending RMM-like indices to pre-satellite era. Clim Dyn (2022). https://doi.org/10.1007/s00382-022-06142-2
+(to be uploaded)
 -->
-- Leung, J.CH., Zhang, B., Gan, Q. et al. On the differential expansion speeds of Indo-Pacific warm pool and deep convection favoring pool under greenhouse warming.  npj Climate and Atmospheric Science (under Review). 
-- Zenodo archive: https://doi.org/10.5281/zenodo.6977567
 
 <br /> 
 
 **References**
 -----
 <!-- - Wheeler, M.C., Hendon, H.H. An All-Season Real-Time Multivariate MJO Index: Development of an Index for Monitoring and Prediction. Mon Weather Rev 132:1917–1932 (2004). https://journals.ametsoc.org/view/journals/mwre/132/8/1520-0493_2004_132_1917_aarmmi_2.0.co_2.xml -->
-- Leung, J.CH., Zhang, B., Gan, Q. et al. On the differential expansion speeds of Indo-Pacific warm pool and deep convection favoring pool under greenhouse warming.  npj Climate and Atmospheric Science (under Review). 
-- Hoyos, C.D., Webster, P.J. Evolution and Modulation of Tropical Heating from the Last Glacial Maximum through the Twenty-First Century. Climate Dynamics (2012).
-- Johnson, N.C., Xie, S.P. Changes in the Sea Surface Temperature Threshold for Tropical Convection. Nature Geoscience (2010).
+- Wheeler, M.C., Hendon, H.H. An All-Season Real-Time Multivariate MJO Index: Development of an Index for Monitoring and Prediction. Mon Weather Rev 132:1917–1932 (2004). https://journals.ametsoc.org/view/journals/mwre/132/8/1520-0493_2004_132_1917_aarmmi_2.0.co_2.xml
+- Leung, J.CH., Qian, W., Zhang, P. et al. Geopotential-based Multivariate MJO Index: extending RMM-like indices to pre-satellite era. Clim Dyn (2022). 
+https://doi.org/10.1007/s00382-022-06142-2
+- Kiladis, George N., Juliana Dias, Katherine H. Straub, Matthew C. Wheeler, Stefan N. Tulich, Kazuyoshi Kikuchi, Klaus M. Weickmann, and Michael J. Ventrice. "A Comparison of OLR and Circulation-Based Indices for Tracking the MJO", Monthly Weather Review 142, 5 (2014): 1697-1715, 
+https://doi.org/10.1175/MWR-D-13-00301.1
 <br /> 
 
 
