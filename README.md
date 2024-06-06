@@ -40,7 +40,7 @@ This repository contains the data files of Outgoing Longwave Radiation based MJO
 **Citation**
 -----
 If you use the OMI-ERA20C or OMI-NOAA20CR in a publication or for any other purposes, please cite 
-- He et al., 2024, Journal of Climate (Under review)
+- He, W., Yang, Y., Leung, J.CH., Xu, J., Wei, D., Cai, B., Kong, H., Tu, S., Zhang, B. Long-term variability of MJO convection from 1900–2010 in the twentieth century reanalyses. Journal of Climate. (Under review)
 - Zenodo archive: 
 
 <br /> 
@@ -48,6 +48,7 @@ If you use the OMI-ERA20C or OMI-NOAA20CR in a publication or for any other purp
 **References**
 -----
 <!-- - Wheeler, M.C., Hendon, H.H. An All-Season Real-Time Multivariate MJO Index: Development of an Index for Monitoring and Prediction. Mon Weather Rev 132:1917–1932 (2004). https://journals.ametsoc.org/view/journals/mwre/132/8/1520-0493_2004_132_1917_aarmmi_2.0.co_2.xml -->
+- He, W., Yang, Y., Leung, J.CH., Xu, J., Wei, D., Cai, B., Kong, H., Tu, S., Zhang, B. Long-term variability of MJO convection from 1900–2010 in the twentieth century reanalyses. Journal of Climate. (Under review)
 - Wheeler, M.C., Hendon, H.H. An All-Season Real-Time Multivariate MJO Index: Development of an Index for Monitoring and Prediction. Mon Weather Rev 132:1917–1932 (2004). https://journals.ametsoc.org/view/journals/mwre/132/8/1520-0493_2004_132_1917_aarmmi_2.0.co_2.xml
 - Leung, J.CH., Qian, W., Zhang, P. et al. Geopotential-based Multivariate MJO Index: extending RMM-like indices to pre-satellite era. Clim Dyn (2022). 
 https://doi.org/10.1007/s00382-022-06142-2
