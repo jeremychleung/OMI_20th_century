@@ -2,7 +2,7 @@
 Outgoing Longwave Radiation based MJO index (OMI) for the 20th century 
 =====
 <!-- [![DOI](https://zenodo.org/badge/520879810.svg)](https://zenodo.org/badge/latestdoi/520879810) <br /> -->
-This repository contains the data files of Outgoing Longwave Radiation based MJO index (OMI) that span from 1900-2010.
+This repository contains the data files of Outgoing Longwave Radiation based MJO index (OMI) that cover the whole 20th century.
 <br /> <br />
  
 <!-- 
@@ -14,10 +14,11 @@ This repository contains the data files of Outgoing Longwave Radiation based MJO
 
 **About the 20th century OMI**
 -----
-- The OMI is a RMM-like index derived solely from outgoing longwave radiation (OLR) reanalyzed in the 20th century. It provides a more accurate representation of the convective characteristics of the Madden-Julian Oscillation (MJO) and can be applied to the pre-satellite era, where satellite-based OLR data was unavailable.
-- The RMM index (Wheeler and Hendon, 2004) focuses on the circulation of MJO rather than its convective characteristics (Leung et al., 2022). Meanwhile, the limited duration of OLR observations limits the data length of the RMM index. These limitations present a challenge for studying the long-term changes in MJO convective activity over the past century. Therefore, the OMI, constructed using OLR data from 20th century reanalysis, is utilized to address these issues.
-- The construction method of the OMI is introduced by Kiladis et al. (2014), which includes the following steps: (1) applying a 30-96-day eastward filter on daily OLR between 20°S and 20°N; (2) performing Empirical Orthogonal Function (EOF) onto the filtered OLR and obtain the first two principal components (PCs); (3) to project the PCs onto the OLR, which has been filtered for 20-96-day, to obtain OMI1 (PC1) and OMI2 (PC2).
-- Please refer to [Kiladis et al. (2014)]([https://doi.org/10.1175/MWR-D-13-00301.1](https://doi.org/10.1175/MWR-D-13-00301.1)/ ) for more detail about the calculation procedure and the science behind it.
+- The OMI is a RMM-like index derived solely from outgoing longwave radiation (OLR). It provides a more accurate representation of the convective characteristics of the Madden-Julian Oscillation (MJO) [(Kiladis et al., 2014)](https://doi.org/10.1175/MWR-D-13-00301.1).
+- The RMM index focuses on the circulation of MJO rather than its convective characteristics [(Wheeler and Hendon, 2004)](https://doi.org/10.1175/1520-0493(2004)132%3C1917:AARMMI%3E2.0.CO;2). Meanwhile, the limited duration of OLR observations limits the data length of both RMM and OMI. These limitations present a challenge for studying the long-term changes in MJO convective activity over the past century. Therefore, in this repository, we reconstructed two century-long OMI data, from two 20th century reanalysis (ERA20C and NOAA20CRv2c). 
+- The construction method of the OMI is introduced by [Kiladis et al. (2014)](https://doi.org/10.1175/MWR-D-13-00301.1). Please refer to their publication and [this Github page](https://github.com/cghoffmann/mjoindices) for more detail about the calculation procedure and the science behind it.
+- The data format in this repository is the same as the observed OMI data provided by [NOAA](https://psl.noaa.gov/mjo/mjoindex/).
+- For those who are interested, our team has also published a century-long RMM index derived based on geopotential anomalies, namely Geopotential-based Multivariate MJO Index (GMM Index). See [Leung et al. (2022)](https://doi.org/10.1007/s00382-022-06142-2) and [this Github page](https://github.com/jeremychleung/Geopotential-based-Multivariate-MJO-Index) for more details. 
  <br /> 
  
 **Data files**
@@ -38,10 +39,9 @@ This repository contains the data files of Outgoing Longwave Radiation based MJO
 
 **Citation**
 -----
-If you use the OMI-ERA20C or OMI-NOAA20CR in a publication or for any other purposes, please cite (to be uploaded)
-<!--
-
--->
+If you use the OMI-ERA20C or OMI-NOAA20CR in a publication or for any other purposes, please cite 
+- He et al., 2024, Journal of Climate (Under review)
+- Zenodo archive: 
 
 <br /> 
 
@@ -58,5 +58,5 @@ https://doi.org/10.1175/MWR-D-13-00301.1
 
 **Contact**
 -----
-If you have any questions about the data, feel free to contact Dr. Jeremy Leung (chleung@pku.edu.cn or liangzx@gd121.cn).
+If you have any questions about the data, feel free to contact Dr. Jeremy Leung (chleung@pku.edu.cn).
 <br /> 
