@@ -1,7 +1,7 @@
 <!-- # OMI_20th_century -->
 Outgoing Longwave Radiation based MJO index (OMI) for the 20th century 
 =====
-<!-- [![DOI](https://zenodo.org/badge/520879810.svg)](https://zenodo.org/badge/latestdoi/520879810) <br /> -->
+[![DOI](https://zenodo.org/badge/808667147.svg)](https://zenodo.org/doi/10.5281/zenodo.13104515) <br />
 This repository contains the data files of Outgoing Longwave Radiation based MJO index (OMI) that cover the whole 20th century.
 <br /> <br />
  
